@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mock Examination — Class VIII Mathematics</title>
+<title>Half-Yearly Mock Examination — Class VIII Mathematics</title>
 <style>
   @page { size: A4; margin: 16mm 14mm; }
 
@@ -95,7 +95,6 @@
   .sub { margin: 2px 0 6px; padding-left: 0; list-style: none; counter-reset: sub; }
   .sub > li { counter-increment: sub; position: relative; padding-left: 40px; margin-bottom: 6px; }
   .sub > li::before { content: "(" counter(sub, lower-roman) ")"; position: absolute; left: 0; }
-  .sub.alpha > li::before { content: "(" counter(sub, lower-alpha) ")"; }
 
   .options {
     display: grid;
@@ -110,16 +109,26 @@
     margin: 6px 0;
   }
 
-  table.data {
-    border-collapse: collapse;
-    margin: 6px 0 4px;
-    font-size: 14px;
-  }
-  table.data th, table.data td {
+  .raw {
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: .3px;
     border: 1px solid #000;
-    padding: 3px 14px;
-    text-align: center;
+    padding: 6px 10px;
+    margin: 6px 0;
+    word-spacing: 4px;
   }
+
+  .frac {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    font-size: 0.95em;
+    line-height: 1.15;
+    margin: 0 2px;
+  }
+  .frac > span:first-child { border-bottom: 1px solid #000; padding: 0 3px; }
+  .frac > span:last-child { padding: 0 3px; }
 
   .end {
     text-align: center;
@@ -151,15 +160,15 @@
   </div>
 
   <header class="paper-head">
-    <div class="exam">Mock Examination</div>
+    <div class="exam">Half-Yearly Mock Examination</div>
     <div class="session">Session 2026–27</div>
     <div class="subject">Mathematics — Class VIII</div>
     <div class="syllabus">Based on the RBSE Class 8 syllabus (excluding Chapter 9: Mensuration and Chapter 12: Factorisation)</div>
   </header>
 
   <div class="meta">
-    <span>Time: 3 Hours</span>
-    <span>Maximum Marks: 80</span>
+    <span>Time: 2½ Hours</span>
+    <span>Maximum Marks: 50</span>
   </div>
 
   <section class="instructions">
@@ -167,9 +176,9 @@
     <ol>
       <li>All questions are compulsory.</li>
       <li>This question paper has four sections: A, B, C and D.</li>
-      <li>Section A has objective questions of 1 mark each. Section B has questions of 2 marks each, Section C of 3 marks each and Section D of 5 marks each.</li>
-      <li>Internal choice is given in some questions of Section D. Attempt only one of the alternatives.</li>
-      <li>Show all steps of working. Draw neat figures and graphs wherever required.</li>
+      <li>Section A carries 10 marks (1 mark each), Section B carries 10 marks (2 marks each), Section C carries 15 marks (3 marks each) and Section D carries 15 marks (5 marks each).</li>
+      <li>Internal choice is given in two questions of Section D. Attempt only one of the alternatives.</li>
+      <li>Show all steps of working. Marks may be deducted for answers without steps.</li>
       <li>Use of calculator is not permitted.</li>
     </ol>
   </section>
@@ -183,29 +192,21 @@
     <div class="body">
       <p>Choose the correct option and write it in your answer book:</p>
       <ol class="sub">
-        <li>The additive inverse of −7/9 is:
-          <div class="options"><span>(a) 7/9</span><span>(b) −9/7</span><span>(c) 9/7</span><span>(d) −7/9</span></div></li>
-        <li>The multiplicative inverse of −5/8 is:
-          <div class="options"><span>(a) 5/8</span><span>(b) −8/5</span><span>(c) 8/5</span><span>(d) −5/8</span></div></li>
-        <li>The solution of 2x + 5 = 13 is:
-          <div class="options"><span>(a) x = 3</span><span>(b) x = 4</span><span>(c) x = 9</span><span>(d) x = 6</span></div></li>
-        <li>The sum of the interior angles of a quadrilateral is:
-          <div class="options"><span>(a) 180°</span><span>(b) 270°</span><span>(c) 360°</span><span>(d) 540°</span></div></li>
-        <li>Each exterior angle of a regular polygon is 45°. The number of its sides is:
-          <div class="options"><span>(a) 6</span><span>(b) 8</span><span>(c) 9</span><span>(d) 10</span></div></li>
-        <li>Which of the following is a perfect square?
-          <div class="options"><span>(a) 1057</span><span>(b) 2352</span><span>(c) 1296</span><span>(d) 3125</span></div></li>
-        <li>The cube root of 2197 is:
-          <div class="options"><span>(a) 11</span><span>(b) 13</span><span>(c) 17</span><span>(d) 19</span></div></li>
-        <li>The value of (−2)<sup>−3</sup> is:
-          <div class="options"><span>(a) 8</span><span>(b) −8</span><span>(c) 1/8</span><span>(d) −1/8</span></div></li>
-        <li>A die is thrown once. The probability of getting an even number is:
-          <div class="options"><span>(a) 1/6</span><span>(b) 1/3</span><span>(c) 1/2</span><span>(d) 2/3</span></div></li>
-        <li>x and y vary inversely. If y = 4 when x = 6, then the value of y when x = 8 is:
-          <div class="options"><span>(a) 3</span><span>(b) 5</span><span>(c) 12</span><span>(d) 2</span></div></li>
+        <li>If x = −2/3 and y = 5/4, then the value of (x + y) ÷ (x − y) is:
+          <div class="options"><span>(a) 7/23</span><span>(b) −7/23</span><span>(c) 23/7</span><span>(d) −23/7</span></div></li>
+        <li>How many non-square natural numbers lie between 40<sup>2</sup> and 41<sup>2</sup>?
+          <div class="options"><span>(a) 40</span><span>(b) 80</span><span>(c) 81</span><span>(d) 82</span></div></li>
+        <li>Each interior angle of a regular polygon is 156°. The number of its sides is:
+          <div class="options"><span>(a) 12</span><span>(b) 15</span><span>(c) 18</span><span>(d) 20</span></div></li>
+        <li>If 5<sup>2x−1</sup> ÷ 25 = 125, then the value of x is:
+          <div class="options"><span>(a) 2</span><span>(b) 3</span><span>(c) 4</span><span>(d) 5</span></div></li>
+        <li>The smallest number by which 3087 must be multiplied to make it a perfect cube is:
+          <div class="options"><span>(a) 3</span><span>(b) 7</span><span>(c) 9</span><span>(d) 21</span></div></li>
+        <li>The price of an article is first increased by 20% and then decreased by 20%. The net change in its price is:
+          <div class="options"><span>(a) no change</span><span>(b) 4% decrease</span><span>(c) 4% increase</span><span>(d) 2% decrease</span></div></li>
       </ol>
     </div>
-    <div class="marks">10×1=10</div>
+    <div class="marks">6×1=6</div>
   </div>
 
   <div class="q">
@@ -213,88 +214,66 @@
     <div class="body">
       <p>Fill in the blanks:</p>
       <ol class="sub">
-        <li>The rational number ________ has no reciprocal.</li>
-        <li>A quadrilateral with exactly one pair of parallel sides is called a ________.</li>
-        <li>The units digit of 57<sup>2</sup> is ________.</li>
-        <li>0.000035 written in standard form is ________.</li>
-        <li>The point (0, 5) lies on the ________-axis.</li>
+        <li>If a + b = 10 and ab = 21, then a<sup>2</sup> + b<sup>2</sup> = ________.</li>
+        <li>The value of (1/2)<sup>−2</sup> + (1/3)<sup>−2</sup> + (1/4)<sup>−2</sup> is ________.</li>
+        <li>The y-coordinate of every point on the x-axis is ________.</li>
+        <li>If 12 men can finish a job in 15 days, then 20 men can finish the same job in ________ days.</li>
       </ol>
     </div>
-    <div class="marks">5×1=5</div>
-  </div>
-
-  <div class="q">
-    <div class="no">3.</div>
-    <div class="body">
-      <p>Write True or False:</p>
-      <ol class="sub">
-        <li>Rational numbers are closed under division.</li>
-        <li>Every rectangle is a parallelogram.</li>
-        <li>The square of an odd number is always odd.</li>
-        <li>5% of 200 is 10.</li>
-        <li>The central angles of a pie chart add up to 180°.</li>
-      </ol>
-    </div>
-    <div class="marks">5×1=5</div>
+    <div class="marks">4×1=4</div>
   </div>
 
   <!-- ================= SECTION B ================= -->
   <div class="section-title">Section – B</div>
   <div class="section-sub">Very short answer type questions</div>
 
-  <div class="q"><div class="no">4.</div><div class="body"><p>Find one rational number between 1/4 and 1/2.</p></div><div class="marks">2</div></div>
+  <div class="q"><div class="no">3.</div><div class="body"><p>Find three rational numbers between −2/5 and 1/3.</p></div><div class="marks">2</div></div>
 
-  <div class="q"><div class="no">5.</div><div class="body"><p>Solve: 3x/4 − 2 = 7</p></div><div class="marks">2</div></div>
+  <div class="q">
+    <div class="no">4.</div>
+    <div class="body"><p>Solve:
+      <span class="frac"><span>3x − 2</span><span>4</span></span> −
+      <span class="frac"><span>2x + 3</span><span>3</span></span> =
+      <span class="frac"><span>2</span><span>3</span></span> − x
+    </p></div>
+    <div class="marks">2</div>
+  </div>
 
-  <div class="q"><div class="no">6.</div><div class="body"><p>Find the measure of each exterior angle of a regular polygon of 9 sides.</p></div><div class="marks">2</div></div>
+  <div class="q"><div class="no">5.</div><div class="body"><p>Find the smallest square number that is divisible by each of 4, 9 and 10.</p></div><div class="marks">2</div></div>
 
-  <div class="q"><div class="no">7.</div><div class="body"><p>Find the square root of 1764 by the prime factorisation method.</p></div><div class="marks">2</div></div>
+  <div class="q">
+    <div class="no">6.</div>
+    <div class="body"><p>Find the cube root of
+      <span class="frac"><span>−13824</span><span>42875</span></span>
+      by the prime factorisation method.</p></div>
+    <div class="marks">2</div>
+  </div>
 
-  <div class="q"><div class="no">8.</div><div class="body"><p>Is 243 a perfect cube? If not, find the smallest number by which it must be multiplied so that the product is a perfect cube.</p></div><div class="marks">2</div></div>
-
-  <div class="q"><div class="no">9.</div><div class="body"><p>Find the value of (2<sup>−1</sup> + 3<sup>−1</sup>)<sup>−1</sup>.</p></div><div class="marks">2</div></div>
-
-  <div class="q"><div class="no">10.</div><div class="body"><p>Find the product using a suitable identity: (3x + 2)(3x − 2)</p></div><div class="marks">2</div></div>
-
-  <div class="q"><div class="no">11.</div><div class="body"><p>A bag contains 4 red balls and 6 blue balls. One ball is drawn at random. What is the probability that it is blue?</p></div><div class="marks">2</div></div>
+  <div class="q">
+    <div class="no">7.</div>
+    <div class="body"><p>If x + <span class="frac"><span>1</span><span>x</span></span> = 5, find the values of
+      x<sup>2</sup> + <span class="frac"><span>1</span><span>x<sup>2</sup></span></span> and
+      x<sup>4</sup> + <span class="frac"><span>1</span><span>x<sup>4</sup></span></span>.</p></div>
+    <div class="marks">2</div>
+  </div>
 
   <!-- ================= SECTION C ================= -->
   <div class="section-title">Section – C</div>
   <div class="section-sub">Short answer type questions</div>
 
-  <div class="q"><div class="no">12.</div><div class="body"><p>Simplify using suitable properties: 2/5 × (−3/7) − 1/14 − 3/7 × 3/5</p></div><div class="marks">3</div></div>
+  <div class="q"><div class="no">8.</div><div class="body"><p>The sum of the digits of a two-digit number is 9. When 27 is subtracted from the number, the digits get reversed. Find the number.</p></div><div class="marks">3</div></div>
 
-  <div class="q"><div class="no">13.</div><div class="body"><p>The sum of two numbers is 95. If one number exceeds the other by 15, find the numbers.</p></div><div class="marks">3</div></div>
+  <div class="q"><div class="no">9.</div><div class="body"><p>In a parallelogram PQRS, the bisectors of ∠P and ∠Q meet at a point O. Find ∠POQ. Give reasons for each step.</p></div><div class="marks">3</div></div>
 
-  <div class="q"><div class="no">14.</div><div class="body"><p>Two adjacent angles of a parallelogram are in the ratio 3 : 2. Find the measures of all the angles of the parallelogram.</p></div><div class="marks">3</div></div>
+  <div class="q"><div class="no">10.</div><div class="body"><p>Find the least number that must be subtracted from 7581 to make it a perfect square. Also find the square root of the perfect square so obtained.</p></div><div class="marks">3</div></div>
 
-  <div class="q"><div class="no">15.</div><div class="body"><p>Find the square root of 6084 by the long division method.</p></div><div class="marks">3</div></div>
-
-  <div class="q"><div class="no">16.</div><div class="body"><p>Find the smallest number by which 8640 must be divided so that the quotient is a perfect cube. Also find the cube root of the quotient.</p></div><div class="marks">3</div></div>
-
-  <div class="q"><div class="no">17.</div><div class="body"><p>The marked price of a watch is ₹2000. The shopkeeper allows a discount of 15%. Find the selling price. If the cost price of the watch was ₹1500, find the profit per cent.</p></div><div class="marks">3</div></div>
+  <div class="q"><div class="no">11.</div><div class="body"><p>A shopkeeper marks his goods 40% above the cost price and allows a discount of 20% on the marked price. Find his gain per cent. If he gains ₹180 on an article, find its cost price.</p></div><div class="marks">3</div></div>
 
   <div class="q">
-    <div class="no">18.</div>
-    <div class="body">
-      <p>Using suitable identities, evaluate (i) and (ii); multiply (iii):</p>
-      <ol class="sub">
-        <li>103 × 97</li>
-        <li>102<sup>2</sup></li>
-        <li>(2x + 3y)(4x − 5y)</li>
-      </ol>
-    </div>
-    <div class="marks">3</div>
-  </div>
-
-  <div class="q">
-    <div class="no">19.</div>
-    <div class="body">
-      <ol class="sub">
-        <li>Find m so that (−3)<sup>m+1</sup> × (−3)<sup>5</sup> = (−3)<sup>7</sup>.</li>
-        <li>Express 0.0000456 in standard form.</li>
-      </ol>
-    </div>
+    <div class="no">12.</div>
+    <div class="body"><p>Simplify:
+      <span class="frac"><span>3<sup>−5</sup> × 10<sup>−5</sup> × 125</span><span>5<sup>−7</sup> × 6<sup>−5</sup></span></span>
+    </p></div>
     <div class="marks">3</div>
   </div>
 
@@ -303,48 +282,41 @@
   <div class="section-sub">Long answer type questions</div>
 
   <div class="q">
-    <div class="no">20.</div>
+    <div class="no">13.</div>
     <div class="body">
-      <p>The favourite sports of 360 students of a school are given below. Find the central angle for each sport and draw a pie chart.</p>
-      <table class="data">
-        <tr><th>Sport</th><th>Cricket</th><th>Football</th><th>Hockey</th><th>Others</th></tr>
-        <tr><th>Number of students</th><td>150</td><td>90</td><td>60</td><td>60</td></tr>
-      </table>
-    </div>
-    <div class="marks">5</div>
-  </div>
-
-  <div class="q">
-    <div class="no">21.</div>
-    <div class="body">
-      <p>Find the amount and the compound interest on ₹10,000 for 2 years at 10% per annum, compounded annually. How much more is it than the simple interest for the same period and rate?</p>
+      <p>Find the compound interest on ₹16,000 for 1½ years at 10% per annum, compounded half-yearly. How much more is it than the compound interest for the same period if the interest were compounded annually?</p>
       <div class="or">OR</div>
-      <p>The population of a town is 20,000. It increases at the rate of 5% per annum. What will be the population of the town after 2 years?</p>
+      <p>A machine is bought for ₹50,000. Its value depreciates by 10% in the first year and by 8% in the second year. Find its value after 2 years. Also find the total depreciation in rupees.</p>
     </div>
     <div class="marks">5</div>
   </div>
 
   <div class="q">
-    <div class="no">22.</div>
+    <div class="no">14.</div>
     <div class="body">
       <ol class="sub">
-        <li>The cost of 15 notebooks is ₹210. Find the cost of 35 such notebooks. <b>(2)</b></li>
-        <li>6 pipes fill a tank in 1 hour 20 minutes. How long will it take if only 5 pipes of the same type are used? <b>(3)</b></li>
+        <li>A car covers 180 km on 15 litres of petrol. How far will it travel on 25 litres? <b>(2)</b></li>
+        <li>12 workers working 8 hours a day can complete a work in 10 days. In how many days will 15 workers working 8 hours a day complete the same work? <b>(3)</b></li>
       </ol>
       <div class="or">OR</div>
-      <p>Solve the following equation and check your answer: (6x + 1)/3 + 1 = (x − 3)/6</p>
+      <ol class="sub">
+        <li>Solve: <span class="frac"><span>2x − 3</span><span>4x + 5</span></span> = <span class="frac"><span>1</span><span>3</span></span> <b>(2)</b></li>
+        <li>The present ages of Hari and Harry are in the ratio 5 : 7. Four years from now, the ratio of their ages will be 3 : 4. Find their present ages. <b>(3)</b></li>
+      </ol>
     </div>
     <div class="marks">5</div>
   </div>
 
   <div class="q">
-    <div class="no">23.</div>
+    <div class="no">15.</div>
     <div class="body">
-      <p>The cost of one pen is ₹5. Make a table showing the cost of 1, 2, 3, 4 and 5 pens. Draw a graph taking the number of pens on the x-axis and the cost on the y-axis. From the graph, answer:</p>
+      <p>The marks (out of 50) obtained by 30 students in a class test are given below:</p>
+      <div class="raw">23, 35, 12, 41, 28, 39, 7, 45, 31, 18, 26, 33, 49, 15, 22, 37, 29, 44, 10, 36, 27, 42, 19, 38, 30, 24, 47, 16, 34, 40</div>
       <ol class="sub">
-        <li>What is the cost of 4 pens?</li>
-        <li>How many pens can be bought for ₹15?</li>
-        <li>Is the graph a straight line passing through the origin?</li>
+        <li>Make a grouped frequency table with class intervals 0–10, 10–20, 20–30, 30–40 and 40–50. (A mark equal to an upper limit goes in the next class; e.g. 10 goes in 10–20.)</li>
+        <li>Draw a histogram for the table.</li>
+        <li>How many students scored 30 marks or more?</li>
+        <li>One student is chosen at random. What is the probability that the student scored less than 20 marks?</li>
       </ol>
     </div>
     <div class="marks">5</div>
